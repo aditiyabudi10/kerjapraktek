@@ -12,7 +12,7 @@
 
 	$data      = mysqli_fetch_array($login,MYSQLI_BOTH);
 
-	$id 		   	   = $data['id'];
+	$id 		   	   = $data['id_user'];
 	$nama 			   = $data['nama'];
 	$username  		   = $data['username'];
 	$password  		   = $data['password'];

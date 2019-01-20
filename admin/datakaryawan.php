@@ -42,7 +42,7 @@
                 while($data = mysqli_fetch_array($query)){  
                   echo '<tr>';
                   echo '<td>'.$no.'</td>';
-                  echo '<td>'.$data['nama'].'</td>';
+                  echo '<td>'.$data['nama_karyawan'].'</td>';
                   echo '<td>'.$data['tempat_lahir'].'</td>';
                   echo '<td>'.$data['tanggal_lahir'].'</td>';
                   echo '<td>'.$data['jenis_kelamin'].'</td>';

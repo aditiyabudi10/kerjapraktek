@@ -86,7 +86,7 @@ $data    		= mysqli_fetch_array($hasil);
         <label class="col-sm-3"></label>
         <label class="col-sm-1"></label>
         <div class="col-sm-8" align="Right">
-          <button class="btn btn-primary"><a href="datakaryawan.html">Kembali</a></button>
+          <button class="btn btn-primary"><a href="datakaryawan.html"><font>Kembali</a></button>
           <button class="btn btn-primary">Simpan</button>
          </div>
     </div>
