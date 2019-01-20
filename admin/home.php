@@ -47,9 +47,9 @@
       <div style="float: center;"></div>
        
    <?php
-  include 'config/koneksi.php';
+  include '../config/koneksi.php';
 
-    echo '<center><img src="gambar/user.png" height= "80px" width = "80px"> </center>';
+    echo '<center><img src="../gambar/user.png" height= "80px" width = "80px"> </center>';
     echo "<font color='white'><center>ADMIN</center></font>";
     ?>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Beranda">
