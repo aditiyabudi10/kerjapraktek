@@ -95,6 +95,11 @@ $data    		= mysqli_fetch_array($hasil);
         <label class="col-sm-3"></label>
         <label class="col-sm-1"></label>
         <div class="col-sm-8" align="Right">
+<<<<<<< HEAD
+          <button class="btn btn-primary"><a href="datakaryawan.html"><font>Kembali</a></button>
+          <button class="btn btn-primary">Simpan</button>
+=======
           <button class="btn btn-primary">Edit</button>
+>>>>>>> 6104b31d61f10a497adc0fa193c7abb1b0753312
          </div>
     </div>

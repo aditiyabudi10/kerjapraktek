@@ -93,7 +93,7 @@ span{
 </style>
 <body background="gambar/bgpt.jpg">
 
-<h2 style="background-color: black;"><font color="white">Login</font></h2>
+<h2 style="background-color: black;"><font color="white">Login<br>CV. BANGKIT MANDIRI</font></h2><br>
 
 <form action="config/loginproses.php" method="POST" style="background-color: black;">
   <div class="imgcontainer">
