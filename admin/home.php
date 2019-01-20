@@ -70,12 +70,6 @@
             <span class="nav-link-text"> Input Gaji Karyawan</span>
           </a>
         </li>
-         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Beranda">
-          <a class="nav-link" href="home.php?konten=datakaryawan">
-            <i class="fa fa-fw fa-clipboard"></i>
-            <span class="nav-link-text"> Input Tempat Kerja Karyawan</span>
-          </a>
-        </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="config/logout.php" id="logout">
             <i class="fa fa-fw fa-sign-out"></i>
