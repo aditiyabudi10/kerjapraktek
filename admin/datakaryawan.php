@@ -48,7 +48,15 @@
                   echo '<td>'.$data['jenis_kelamin'].'</td>';
                   echo '<td>'.$data['agama'].'</td>';
                   echo '<td>'.$data['alamat'].'</td>';
-                  echo '<td>'.$data['posisi'].'</td>';
+                  if ($data['posisi']==0) {
+                    echo '<td>Admin</td>';
+                  }
+                  elseif ($data['posisi']==1) {
+                    echo '<td>Manager</td>';
+                  }
+                  else {
+                    echo '<td>Karyawan</td>';
+                  }
                   echo '<td>'.$data['penempatan'].'</td>';
                   echo '<td  width="20"><a data-toggle="tooltip" data-placement="left" title="Edit" href=home.php?konten=editkaryawan&&id_karyawan='.$data['id_karyawan'].'><i class="fa fa-edit fa-fw"></i></a></td>';
                   echo '<td  width="20"><a data-toggle="tooltip" data-placement="left" title="Hapus" href=config/deleteproseskaryawan.php?id_karyawan='.$data['id_karyawan'].'><i class="fa fa-trash fa-fw"></i></a></td>';

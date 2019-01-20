@@ -54,9 +54,9 @@
 		<label class="col-sm-4">
 			<select class="form-control" id="posisi" name="posisi" required>
                 <option>Pilih Posisi</option>
-                <option>Admin</option>
-                <option>Manager</option>
-                <option>Karyawan</option>
+                <option value="0">Admin</option>
+                <option value="1">Manager</option>
+                <option value="2">Karyawan</option>
             </select>
 	</div>
 	<div class="form-group">
