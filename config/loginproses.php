@@ -33,7 +33,7 @@ if($jlhrecord > 0){
 	//redirect level
 		if($level=='0'){
 			// echo 'anda berhasil login sebagai admin';
-			header('location:../home.php');
+			header('location:../admin/home.php');
 		}
 		elseif ($level=='1'){
 			// echo 'anda berhasil login sebagai manager';
