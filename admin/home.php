@@ -24,13 +24,13 @@
   <meta name="author" content="">
   <title>Sistem Pembayaran</title>
   <!-- Bootstrap core CSS-->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
-  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="bootstrap/css/sb-admin.css" rel="stylesheet">
+  <link href="../bootstrap/css/sb-admin.css" rel="stylesheet">
   <script src="jquery-3.3.1.min.js"></script>
 
 </head>
@@ -47,9 +47,9 @@
       <div style="float: center;"></div>
        
    <?php
-  include 'config/koneksi.php';
+  include '../config/koneksi.php';
 
-    echo '<center><img src="gambar/user.png" height= "80px" width = "80px"> </center>';
+    echo '<center><img src="../gambar/user.png" height= "80px" width = "80px"> </center>';
     echo "<font color='white'><center>ADMIN</center></font>";
     ?>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Beranda">
