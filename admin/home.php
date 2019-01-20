@@ -61,7 +61,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Beranda">
           <a class="nav-link" href="home.php?konten=datakaryawan">
             <i class="fa fa-fw fa-clipboard"></i>
-            <span class="nav-link-text"> Input Data Karyawan</span>
+            <span class="nav-link-text"> Data Karyawan</span>
           </a>
         </li>
          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Beranda">
