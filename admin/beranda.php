@@ -19,7 +19,7 @@
     <br>
     <br>
     <br>
-     <h4><p style="text-align:center">Anda Berhasil login sebagai KARYAWAN</p></h4>
+     <h4><p style="text-align:center">Anda Berhasil login sebagai ADMIN</p></h4>
     <?php
     include '../config/koneksi.php';
     echo "<h3 align='center'>SELAMAT DATANG ".$_SESSION['username']."</h3>";
@@ -36,16 +36,9 @@
         <input type="hidden" name="tanggal" value="<?php echo $day ?>">
         <input type="hidden" name="bulan" value="<?php echo $month ?>">
         <p align="center">
-        <button class="btn btn-primary" id="Btn" onclick="myFunction()" type="submit">ABSEN HARI INI</button></p>
+        <button class="btn btn-primary" type="submit">ABSEN HARI INI</button></p>
       </form>
     </p>
-    <script>
-function myFunction() {
-    var x = document.getElementById("Btn");
-    x.disabled = true;
-}
-</script>
-
 
 </div>
 </div>
