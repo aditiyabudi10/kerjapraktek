@@ -17,6 +17,7 @@
 	$username  		   = $data['username'];
 	$password  		   = $data['password'];
 	$level	           = $data['level'];
+	$id_karyawan 	   = $data['id_karyawan'];
 
 
 if($jlhrecord > 0){
@@ -28,6 +29,7 @@ if($jlhrecord > 0){
 	$_SESSION['username']		= $username;
 	$_SESSION['password']		= $password;
 	$_SESSION['level']			= $level;
+	$_SESSION['id_karyawan']	= $id_karyawan;
 	$_SESSION['id'] 		    = session_id();
 
 	//redirect level

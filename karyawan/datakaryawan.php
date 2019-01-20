@@ -8,7 +8,7 @@
         <div class="form-group">
           <label class="col-sm-3">Nama</label>
           <label class="col-sm-1">:</label>
-          <label class="col-sm-4"></label>
+          <label class="col-sm-4"><?php  ?></label>
         </div>
         <div class="form-group">
           <label class="col-sm-3">Tempat Lahir</label>
