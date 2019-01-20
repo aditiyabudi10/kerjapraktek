@@ -2,7 +2,7 @@
 
 error_reporting(0);
 
-include '../config/koneksi.php';
+include 'config/koneksi.php';
 
 $id_karyawan = $_GET['id_karyawan'];
 
@@ -13,9 +13,9 @@ $data    		= mysqli_fetch_array($hasil);
 
 ?>
 <br>
-<form class="form-horizontal" action="../config/editkaryawanproses.php" method="POST">
+<form class="form-horizontal" action="config/editkaryawanproses.php" method="POST">
 	<ol class="breadcrumb">
-      <li class="active"><b>EDIT AKUN KARYAWAN</b></li>
+      <li class="active"><b>EDIT AKUN PEGAWAI</b></li>
        </ol>
     <input type="hidden" name="id_karyawan" value="<?php echo $id_karyawan ?>">
 	<div class="form-group">
@@ -70,7 +70,16 @@ $data    		= mysqli_fetch_array($hasil);
 	<div class="form-group">
 		<label class="col-sm-3">Penempatan</label>
 		<label class="col-sm-1">:</label>
-		<label class="col-sm-4"><input class="form-control" name="penempatan" type="text" value="<?php echo $data['penempatan']; ?>" required></label>
+		<label class="col-sm-4">
+			<select class="form-control" id="penempatan" name="penempatan" required>
+                <option><?php echo $data['penempatan'];?></option>
+                <option>Kantor Pusat</option>
+                <option>Blok A</option>
+                <option>Blok B</option>
+                <option>Blok C</option>
+                <option>Blok D</option>
+                <option>Blok E</option>
+            </select>
 	</div>
 	<div class="form-group">
 		<label class="col-sm-3">Username</label>
@@ -86,7 +95,11 @@ $data    		= mysqli_fetch_array($hasil);
         <label class="col-sm-3"></label>
         <label class="col-sm-1"></label>
         <div class="col-sm-8" align="Right">
+<<<<<<< HEAD
           <button class="btn btn-primary"><a href="datakaryawan.html"><font>Kembali</a></button>
           <button class="btn btn-primary">Simpan</button>
+=======
+          <button class="btn btn-primary">Edit</button>
+>>>>>>> 6104b31d61f10a497adc0fa193c7abb1b0753312
          </div>
     </div>
