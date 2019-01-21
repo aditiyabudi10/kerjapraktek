@@ -73,7 +73,7 @@
                 <option>Blok E</option>
             </select>
 	</div>
-	<div class="form-group">
+<!-- 	<div class="form-group">
 		<label class="col-sm-3">Username</label>
 		<label class="col-sm-1">:</label>
 		<label class="col-sm-4"><input class="form-control" type="text" name="username" placeholder="Masukkan Username Karyawan"> </label>
@@ -82,7 +82,7 @@
 		<label class="col-sm-3">Password</label>
 		<label class="col-sm-1">:</label>
 		<label class="col-sm-4"><input class="form-control" type="password" name="password" placeholder="Masukkan Password Karyawan"> </label>
-	</div>
+	</div> -->
 	<div class="form-group">
         <label class="col-sm-3"></label>
         <label class="col-sm-1"></label>

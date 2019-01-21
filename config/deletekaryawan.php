@@ -10,7 +10,7 @@
 	if ($query)
 	    {
 	    	echo "<br><br><br><strong><center><i>Data berhasil dihapus!";
-	    	echo "<META HTTP-EQUIV='REFRESH' CONTENT ='1; URL=../home.php?konten=datakaryawan'>";
+	    	echo '<META HTTP-EQUIV="REFRESH" CONTENT = "1; URL=../admin/home.php?konten=datakaryawan">';
 	    }
 	else {
 	    	print"

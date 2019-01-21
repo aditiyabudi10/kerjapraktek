@@ -6,22 +6,22 @@ include 'config/koneksi.php';
 
 $id_karyawan = $_GET['id_karyawan'];
 
-$tampilkan  	= "SELECT * FROM karyawan WHERE id_karyawan = '$id_karyawan'";
+$tampilkan  	= "SELECT id_karyawan, nama, tempat_lahir, tanggal_lahir, jenis_kelamin, agama, alamat, posisi, penempatan, username, password FROM karyawan WHERE id_karyawan = '$id_karyawan'";
 $hasil   		= mysqli_query($konek, $tampilkan)or die(mysql_error());
 $data    		= mysqli_fetch_array($hasil);
 
 
 ?>
 <br>
-<form class="form-horizontal" action="../config/editkaryawanproses.php" method="POST">
+<form class="form-horizontal" action="config/editkaryawanproses.php" method="POST">
 	<ol class="breadcrumb">
-      <li class="active"><b>EDIT AKUN PEGAWAI</b></li>
+      <li class="active"><b>EDIT AKUN KARYAWAN</b></li>
        </ol>
     <input type="hidden" name="id_karyawan" value="<?php echo $id_karyawan ?>">
 	<div class="form-group">
 		<label class="col-sm-3">Nama</label>
 		<label class="col-sm-1">:</label>
-		<label class="col-sm-4"><input class="form-control" name="nama_karyawan" type="text" value="<?php echo $data['nama_karyawan']; ?>" required></label>
+		<label class="col-sm-4"><input class="form-control" name="nama" type="text" value="<?php echo $data['nama']; ?>" required></label>
 	</div>
 	<div class="form-group">
 		<label class="col-sm-3">Tempat Lahir</label>
@@ -70,18 +70,9 @@ $data    		= mysqli_fetch_array($hasil);
 	<div class="form-group">
 		<label class="col-sm-3">Penempatan</label>
 		<label class="col-sm-1">:</label>
-		<label class="col-sm-4">
-			<select class="form-control" id="penempatan" name="penempatan" required>
-                <option><?php echo $data['penempatan'];?></option>
-                <option>Kantor Pusat</option>
-                <option>Blok A</option>
-                <option>Blok B</option>
-                <option>Blok C</option>
-                <option>Blok D</option>
-                <option>Blok E</option>
-            </select>
+		<label class="col-sm-4"><input class="form-control" name="penempatan" type="text" value="<?php echo $data['penempatan']; ?>" required></label>
 	</div>
-	<!-- <div class="form-group">
+	<div class="form-group">
 		<label class="col-sm-3">Username</label>
 		<label class="col-sm-1">:</label>
 		<label class="col-sm-4"><input class="form-control" name="username" type="text" value="<?php echo $data['username']; ?>" required></label>
@@ -90,12 +81,12 @@ $data    		= mysqli_fetch_array($hasil);
 		<label class="col-sm-3">Password</label>
 		<label class="col-sm-1">:</label>
 		<label class="col-sm-4"><input class="form-control" name="password" type="password" value="<?php echo $data['password']; ?>" required></label>
-	</div> -->
+	</div>
 	<div class="form-group">
         <label class="col-sm-3"></label>
         <label class="col-sm-1"></label>
         <div class="col-sm-8" align="Right">
-          <button class="btn btn-primary">Edit</button>
-
+          <button class="btn btn-primary">Kembali</button>
+          <button class="btn btn-primary">Simpan</button>
          </div>
     </div>

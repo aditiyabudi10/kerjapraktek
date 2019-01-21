@@ -70,12 +70,12 @@
             <span class="nav-link-text"> Input Gaji Karyawan</span>
           </a>
         </li>
-         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Beranda">
+         <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Beranda">
           <a class="nav-link" href="home.php?konten=tambahpenempatan">
             <i class="fa fa-fw fa-clipboard"></i>
             <span class="nav-link-text"> Tambah Penempatan Karyawan</span>
           </a>
-        </li>
+        </li> -->
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="../config/logout.php" id="logout">
             <i class="fa fa-fw fa-sign-out"></i>
@@ -114,10 +114,10 @@
             include 'inputgaji.php';
           if($konten=='input-gaji')
             include 'input-gaji.php';
-          if($konten=='tambahpenempatan')
-            include 'tambahpenempatan.php';
-          if($konten=='editlokasi')
-            include 'editlokasi.php';
+          // if($konten=='tambahpenempatan')
+          //   include 'tambahpenempatan.php';
+          // if($konten=='editlokasi')
+          //   include 'editlokasi.php';
 
 
 

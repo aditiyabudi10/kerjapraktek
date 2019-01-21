@@ -1,17 +1,36 @@
-<ol class="breadcrumb">
-  <li class="breadcrumb-item">
-    <a href="#">Data Karyawan</a>
-  </li>
-</ol>
-<div class="card mb-3">
-  <div class="card-header">
-    <i class="fa fa-table"></i>  Input Data Karyawan</div>
-    <div class="table-responsive"><br>
-      <div class="col-sm-1" align="Right">
-         <a href="home.php?konten=tambahakun"> <button class="btn btn-success">Tambah Karyawan</button></a>
-      </div>
-      <br>
-      <table class="table table-bordered" id="" width="100%" cellspacing="0">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="../bootstrap/css/sb-admin.css" rel="stylesheet">
+  <script src="jquery-3.3.1.min.js"></script>
+
+</head>
+<body onload="window.print()">
+
+
+<center>
+	<img src="../gambar/logobm.png" alt="Girl in a jacket" style="width:200px;height:200px;">
+</center>
+<br>
+<center>
+	<h1>TABLE DATA KARYAWAN</h1>
+</center>
+<br>
+<div class="panel panel-default"">
+<table class="table table-bordered" id="" width="100%" cellspacing="0">
         <thead>
           <tr>
             <th>No.</th>
@@ -23,7 +42,6 @@
             <th>Alamat</th>
             <th>Posisi</th>
             <th>Penempatan</th>
-            <th colspan="3"><center>Aksi</center></th>
           </tr>
         </thead>
         <tfoot>
@@ -58,9 +76,6 @@
                     echo '<td>Karyawan</td>';
                   }
                   echo '<td>'.$data['penempatan'].'</td>';
-                  echo '<td  width="20"><a data-toggle="tooltip" data-placement="left" title="Edit" href=home.php?konten=editkaryawan&&id_karyawan='.$data['id_karyawan'].'><i class="fa fa-edit fa-fw"></i></a></td>';
-                  echo '<td  width="20"><a data-toggle="tooltip" data-placement="left" title="Hapus" href=config/deletekaryawan.php?id_karyawan='.$data['id_karyawan'].'><i class="fa fa-trash fa-fw"></i></a></td>';
-                  echo '<td  width="20"><a data-toggle="tooltip" data-placement="left" title="Detail" href=home.php?konten=infodetail&&id_karyawan='.$data['id_karyawan'].'><i class="fa fa-info fa-fw"></i></a></td>';
                   $no++;  
                 }
               }
@@ -69,6 +84,7 @@
 
         </tbody>
       </table>
-      <a href="cetak_karyawan.php" target="_BLANK" role="button" class="btn btn-primary pull-right" style="margin-right:16px;margin-bottom:10px;width:150px"><span class="fa fa-print"></span> Cetak Report</a>
-    </div>
-  </div>
+
+ </title>
+</body>
+</html>

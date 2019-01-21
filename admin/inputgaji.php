@@ -36,7 +36,7 @@
                 while($data = mysqli_fetch_array($query)){  
                   echo '<tr>';
                   echo '<td><center>'.$no.'</center></td>';
-                  echo '<td>'.$data['nama'].'</td>';
+                  echo '<td>'.$data['nama_karyawan'].'</td>';
                   echo '<td>'.$data['penempatan'].'</td>';
                   echo '<td>'.$data['posisi'].'</td>';
                   echo '<td  width="20"><a data-toggle="tooltip" data-placement="left" title="Input Gaji" href=home.php?konten=input-gaji&&id_karyawan='.$data['id_karyawan'].'&&posisi='.$data['posisi'].'><i class="fa fa-edit fa-fw"></i></a></td>';

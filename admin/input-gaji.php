@@ -12,22 +12,31 @@ $tampilkan  	= "SELECT * FROM karyawan WHERE id_karyawan = '$id_karyawan'";
 $hasil   		= mysqli_query($konek, $tampilkan)or die(mysql_error());
 $data    		= mysqli_fetch_array($hasil);
 
+// die(var_dump($data));
+
+
+
 $hadir          =  "SELECT COUNT(keterangan) as hadir FROM absensi where keterangan = 'Hadir' AND id_karyawan = '$id_karyawan'";
 $hasil1   		= mysqli_query($konek, $hadir)or die(mysql_error());
 $data1    		= mysqli_fetch_array($hasil1);
+
+//die(var_dump($data1));
 
 $sakit          =  "SELECT COUNT(keterangan) as sakit FROM absensi where keterangan = 'Sakit' AND id_karyawan = '$id_karyawan'";
 $hasil2   		= mysqli_query($konek, $sakit)or die(mysql_error());
 $data2   		= mysqli_fetch_array($hasil2);
 
+// die(var_dump($data3));
+
 $cuti          =  "SELECT COUNT(keterangan) as cuti FROM absensi where keterangan = 'Cuti' AND id_karyawan = '$id_karyawan'";
 $hasil3   		= mysqli_query($konek, $cuti)or die(mysql_error());
 $data3   		= mysqli_fetch_array($hasil3);
 
-$gajipokok          =  "SELECT * FROM gaji_pokok where posisi = '$posisi'";
+
+$gajipokok          =  "SELECT * FROM gaji where posisi = '$posisi'";
 $hasil4   		= mysqli_query($konek, $gajipokok)or die(mysql_error());
 $data4   		= mysqli_fetch_array($hasil4);
-
+// die(var_dump($data4));
 
 ?>
 
@@ -60,7 +69,7 @@ clearInterval(interval);}
 	<div class="form-group">
 		<label class="col-sm-3">Nama Karyawan</label>
 		<label class="col-sm-1">:</label>
-		<label class="col-sm-7"><input class="form-control" name="nama" type="text" value="<?php echo $data['nama']; ?>" readonly></label>
+		<label class="col-sm-7"><input class="form-control" name="nama" type="text" value="<?php echo $data['nama_karyawan']; ?>" readonly></label>
 	</div>
 	<div class="form-group">
 		<label class="col-sm-3">Posisi</label>
@@ -153,7 +162,7 @@ clearInterval(interval);}
 		<label class="col-sm-3">Uang Transport</label>
 		<label class="col-sm-1">:</label>
 
-		<label class="col-sm-3"><input class="form-control" name="ut" type="text" value="<?php echo $data4['uang_transport']; ?>" readonly></label> 
+		<label class="col-sm-3"><input class="form-control" name="ut" type="text" value="<?php echo $data4['transport']; ?>" readonly></label> 
 
 		<label class="col-sm-3"><input class="form-control" name="ut1" type="text" readonly></label> 
 
